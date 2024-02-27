@@ -1,0 +1,9 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('../controller/controller');
+
+
+router.get('/PesquisandoPerfil/GitHub/:name', controller.perquisarPerfilGitHub);
+
+
+module.exports = router;
